@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/userName"
+            android:inputType="textCapWords"
+            android:textColor="@color/main_color"
+            android:textColorHint="@color/text_color_hint" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/earthquestion" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/question_one"
+            android:textColor="@color/main_color"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/question_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp">
+
+            <RadioButton
+                android:id="@+id/q_one_incorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/q_one_answer1"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q_one_incorrect2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/q_one_answer2"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q_one_incorrect3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/q_one_answer3"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q_one_correct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/q_one_answer4"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/footprint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/question_two"
+            android:textColor="@color/main_color"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/q_two_incorrect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/earth"
+                    android:textColor="@color/main_color"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/q_two_incorrect2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mercury"
+                    android:textColor="@color/main_color"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/q_two_incorrect3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/venus"
+                    android:textColor="@color/main_color"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/q_two_incorrect4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mars"
+                    android:textColor="@color/main_color"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingStart="16dp">
+
+                <CheckBox
+                    android:id="@+id/q_two_correct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jupiter"
+                    android:textColor="@color/main_color"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/q_two_correct2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saturn"
+                    android:textColor="@color/main_color"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/q_two_correct3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uranus"
+                    android:textColor="@color/main_color"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/q_two_correct4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/neptune"
+                    android:textColor="@color/main_color"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/mars_sunset" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/question_three"
+            android:textColor="@color/main_color"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/question_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp">
+
+            <RadioButton
+                android:id="@+id/q_three_correct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/mars"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q_three_incorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/saturn"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q_three_incorrect2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/neptune"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q_three_incorrect3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jupiter"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/olympus_moon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/question_four"
+            android:textColor="@color/main_color"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/question_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp">
+
+            <RadioButton
+                android:id="@+id/q_four_incorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/earth"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q_four_incorrect2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/mercury"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q_four_correct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/mars"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q_four_incorrect3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/venus"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/rocket_launch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/question_five"
+            android:textColor="@color/main_color"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/spaceOrbitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/questionFiveHint"
+            android:inputType="textCapWords"
+            android:textColor="@color/main_color"
+            android:textColorHint="@color/text_color_hint"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="16dp"
+                android:background="@color/buttonColor"
+                android:onClick="submitQuiz"
+                android:text="@string/button"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
