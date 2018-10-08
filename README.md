@@ -1,6 +1,6 @@
 # AstronomyQuiz
 
-<b> A single screen educational app that quizzes the user about Astronomy</b> 
+<b> A single screen astronomy quiz app. </b> 
 
 <p> Project #3 for the <b>Android Basics Nanodegree</b> by Google </p>
 
